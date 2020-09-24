@@ -1,0 +1,26 @@
+net: "RGBNet_train.prototxt"
+#test_net: "RGBNet_test.prototxt"
+display: 20
+
+average_loss: 20
+lr_policy: "step"
+#stepsize: 5120
+stepsize: 7125
+gamma: 0.5
+base_lr: 1e-4
+#debug_info:true
+
+momentum: 0.99
+#test_iter: 150
+#test_interval: 1506
+
+type: "Adam"
+iter_size: 4
+max_iter: 30000
+weight_decay: 0.0005
+#snapshot: 512
+snapshot: 712
+snapshot_prefix: "../models/RGB_train_models/"
+
+test_initialization: false
+
