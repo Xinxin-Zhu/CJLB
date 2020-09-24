@@ -3,7 +3,7 @@ Code for NEUROCOMPUTING 2020 paper. "RGB-D Salient Object Detection via Cross-Mo
 # Overall
 ![avatar](https://github.com/Xinxin-Zhu/CJLB/tree/master/Figures/overall.png)
 # Visual examples
-![avatar](https://github.com/Xinxin-Zhu/CJLB/tree/master/Figures/visual_examples.png)
+![avatar](https://github.com/Xinxin-Zhu/CJLB/tree/master/Figures/visual examples.png)
 ## CJLB Code
 
 ### > Requirment
@@ -14,8 +14,7 @@ Code for NEUROCOMPUTING 2020 paper. "RGB-D Salient Object Detection via Cross-Mo
 ### > Usage
 #### 1. Clone the repo
 ```
-git clone https://github.com/jiwei0921/DMRA.git
-cd DMRA/
+git clone https://github.com/Xinxin-Zhu/CJLB.git
 ```
 #### 2. Train/Test
 + test     
@@ -41,7 +40,7 @@ python run.py ../models/RGBDNet_pre_train.caffemodel RGBDNet_train.prototxt
 
 The following are the evaluation results of the model on five RGB-D datasets.
 
-**Datasets\EvaluationMetrics**| F-measure | E-measure | S-measure | MAE(Low better) |    
+**Datasets\EvaluationMetrics**| F-measure | E-measure | S-measure | MAE |    
 :-: | :-: | :-: | :-: | :-: |  
 NLPR | 0.887 | 0.949 | 0.906 | 0.033 |  
 NJUD | 0.877 | 0.923 | 0.883 | 0.056 |
@@ -51,7 +50,7 @@ DES | 0.898 | 0.962 | 0.910 | 0.030 |
  
 + Tips: **The results of the paper shall prevail.** Because of the randomness of the training process, the results fluctuated slightly.
 
-### > Results  
+### > Our saliency maps  
 | [NJUD](https://pan.baidu.com/s/15opVkn2QQ1DXttD2-h17AA)  |
 | [NLPR](https://pan.baidu.com/s/1QHdWodsxknvXZb1YLDOUgA)  |
 | [STEREO](https://pan.baidu.com/s/1UpUTEGS_1rayKwY5-LXKjw)  |
@@ -59,18 +58,10 @@ DES | 0.898 | 0.962 | 0.910 | 0.030 |
 | [DES](https://pan.baidu.com/s/1JJTWU9gObkvmEq0BVA57Qg)  |
 + Note:  The extraction code is XING.
 
-  
-### > Saliency maps of related models      
+### > Saliency maps of other models      
 + The web link is [here](http://dpfan.net/d3netbenchmark/).
 
 ### If you think this work is helpful, please cite
-```
-@InProceedings{Zhu_2020_NC,       
-   author = {Yongri {Piao} and Wei {Ji} and Jingjing {Li} and Miao {Zhang} and Huchuan {Lu}},   
-   title = {Depth-induced Multi-scale Recurrent Attention Network for Saliency Detection},     
-   booktitle = "ICCV",     
-   year = {2020}     
-}  
 ```
 @article{Zhu_2020_NC, 
   title={RGB-D Salient Object Detection via Cross-Modal Joint Feature Extraction and Low-Bound Fusion Loss},
@@ -78,5 +69,6 @@ DES | 0.898 | 0.962 | 0.910 | 0.030 |
   journal={Neurocomputing},
   year={2020}
 }
+```
 ### Contact Us
 If you have any questions, please contact us ( xxzhu@163.com or weiji.dlut@gmail.com ).
