@@ -1,10 +1,11 @@
 # CJLB
 Code for NEUROCOMPUTING 2020 paper. "RGB-D Salient Object Detection via Cross-Modal Joint Feature Extraction and Low-Bound Fusion Loss".
-# Overall
+## Overall
 ![avatar](https://github.com/Xinxin-Zhu/CJLB/tree/master/Figures/overall.png)
-# Visual examples
+## Visual examples
 ![avatar](https://github.com/Xinxin-Zhu/CJLB/tree/master/Figures/visual examples.png)
-## CJLB Code
+
+## Code
 
 ### > Requirment
 + caffe
@@ -23,7 +24,7 @@ Download related dataset [**link**](https://github.com/jiwei0921/RGBD-SOD-datase
 cd Test
 python RGBD_test.py
 ```
-+ train
++ train     
 The whole network training process includes two stages. In the first stage, a VGG16 model pre-trained [**link**](https://github.com/jiwei0921/RGBD-SOD-datasets), on ImageNet is used to initialize the parameters of RGB and depth saliency prediction streams respectively,
 and the two independent streams are trained until convergence. 
 ```
