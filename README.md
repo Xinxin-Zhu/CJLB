@@ -25,7 +25,8 @@ cd Test
 python RGBD_test.py
 ```
 + train     
-The whole network training process includes two stages. In the first stage, a VGG16 model pre-trained [**link**](https://github.com/jiwei0921/RGBD-SOD-datasets), on ImageNet is used to initialize the parameters of RGB and depth saliency prediction streams respectively,
+The whole network training process includes two stages. 
+In the first stage, a VGG16 model pre-trained [**link**](https://github.com/jiwei0921/RGBD-SOD-datasets), on ImageNet is used to initialize the parameters of RGB and depth saliency prediction streams respectively,
 and the two independent streams are trained until convergence. 
 ```
 cd Train
