@@ -3,7 +3,7 @@ Code for NEUROCOMPUTING 2020 paper. "RGB-D Salient Object Detection via Cross-Mo
 ## Overall
 ![avatar](https://github.com/Xinxin-Zhu/CJLB/blob/master/Figures/overall.png)
 ## Visual examples
-![avatar](https://github.com/Xinxin-Zhu/CJLB/tree/master/Figures/visual examples.png)
+![avatar](https://github.com/Xinxin-Zhu/CJLB/blob/master/Figures/visual examples.png)
 
 ## Code
 
