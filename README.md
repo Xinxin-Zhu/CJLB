@@ -1,7 +1,7 @@
 # CJLB
 Code for NEUROCOMPUTING 2020 paper. "RGB-D Salient Object Detection via Cross-Modal Joint Feature Extraction and Low-Bound Fusion Loss".
 ## Overall
-![avatar](https://github.com/Xinxin-Zhu/CJLB/tree/master/Figures/overall.png)
+![avatar](https://github.com/Xinxin-Zhu/CJLB/blob/master/Figures/overall.png)
 ## Visual examples
 ![avatar](https://github.com/Xinxin-Zhu/CJLB/tree/master/Figures/visual examples.png)
 
@@ -19,20 +19,20 @@ git clone https://github.com/Xinxin-Zhu/CJLB.git
 ```
 #### 2. Train/Test
 + test     
-Download related dataset [**link**](https://github.com/jiwei0921/RGBD-SOD-datasets), and put the test model [**link**](https://github.com/jiwei0921/RGBD-SOD-datasets), in the "**/models**". Meanwhile, you need to set relevant path correctly.
+Download related dataset [**link**](https://pan.baidu.com/s/1SMg6cvRXQXtM48WqdH8zQQ), and put the test model [**link**](https://pan.baidu.com/s/1axDcaU4jgnLgVOGZjmgzQg), in the "**/models**". Meanwhile, you need to set relevant path correctly.
 ```
 cd Test
 python RGBD_test.py
 ```
 + train     
 The whole network training process includes two stages. 
-In the first stage, a VGG16 model pre-trained [**link**](https://github.com/jiwei0921/RGBD-SOD-datasets), on ImageNet is used to initialize the parameters of RGB and depth saliency prediction streams respectively,
+In the first stage, a VGG16 model pre-trained [**link**](https://pan.baidu.com/s/1Gk60sXea8D-a2tEdMhVsCg), on ImageNet is used to initialize the parameters of RGB and depth saliency prediction streams respectively,
 and the two independent streams are trained until convergence. 
 ```
 cd Train
 python run.py ../models/vgg16_RGB-Depth_pre_train.caffemodel RGBNet_train.prototxt(or DepthNet_train.prototxt)
 ```
-In the second stage, the whole network is initialized by the weights of the two streams [**link**](https://github.com/jiwei0921/RGBD-SOD-datasets), , and the final model is obtained through further joint training.  
+In the second stage, the whole network is initialized by the weights of the two streams [**link**](https://pan.baidu.com/s/1PgnikJrbZck85h9CidsAfg), , and the final model is obtained through further joint training.  
 ```
 cd Train
 python run.py ../models/RGBDNet_pre_train.caffemodel RGBDNet_train.prototxt
@@ -73,4 +73,4 @@ DES | 0.898 | 0.962 | 0.910 | 0.030 |
 }
 ```
 ### Contact Us
-If you have any questions, please contact us ( xxzhu@163.com or weiji.dlut@gmail.com ).
+If you have any questions, please contact us ( xxzhu@163.com or mlzhang1998@gmail.com ).
